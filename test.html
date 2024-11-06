@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notifications</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .notifications-container {
+        background-color: white;
+        width: 400px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .header .mark-read {
+        font-size: 12px;
+        color: #0073e6;
+        cursor: pointer;
+    }
+    .notification {
+        display: flex;
+        align-items: flex-start;
+        padding: 15px 0;
+        border-bottom: 1px solid #f0f2f5;
+    }
+    .notification:last-child {
+        border-bottom: none;
+    }
+    .notification img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    .notification-content {
+        flex-grow: 1;
+    }
+    .notification-content p {
+        margin: 0;
+        font-size: 14px;
+        color: #333;
+    }
+    .notification-content .time {
+        font-size: 12px;
+        color: #888;
+        margin-top: 5px;
+    }
+    .notification-content .highlight {
+        color: #0073e6;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .notification-content .message-box {
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 13px;
+        color: #555;
+    }
+</style>
+</head>
+<body>
+
+<div class="notifications-container">
+    <div class="header">
+        <h2>Notifications <span style="background-color: #0073e6; color: white; font-size: 12px; padding: 3px 6px; border-radius: 50%;">3</span></h2>
+        <div class="mark-read">Mark all as read</div>
+    </div>
+    
+    <div class="notification">
+        <img src="assets/images/avatar-mark-webber.webp" alt="Mark Webber">
+        <div class="notification-content">
+            <p><strong>Mark Webber</strong> reacted to your recent post <span class="highlight">My first tournament today!</span> <span style="color: red;">•</span></p>
+            <div class="time">1m ago</div>
+        </div>
+    </div>
+    
+    <div class="notification">
+        <img src="assets/images/avatar-angela-gray.webp" alt="Angela Gray">
+        <div class="notification-content">
+            <p><strong>Angela Gray</strong> followed you <span style="color: red;">•</span></p>
+            <div class="time">5m ago</div>
+        </div>
+    </div>
+    
+    <div class="notification">
+        <img src="assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson">
+        <div class="notification-content">
+            <p><strong>Jacob Thompson</strong> has joined your group <span class="highlight">Chess Club</span> <span style="color: red;">•</span></p>
+            <div class="time">1 day ago</div>
+        </div>
+    </div>
+    
+    <div class="notification">
+        <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin">
+        <div class="notification-content">
+            <p><strong>Rizky Hasanuddin</strong> sent you a private message</p>
+            <div class="time">5 days ago</div>
+            <div class="message-box">
+                Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+            </div>
+        </div>
+    </div>
+    
+    <div class="notification">
+        <img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith">
+        <div class="notification-content">
+            <p><strong>Kimberly Smith</strong> commented on your picture</p>
+            <div class="time">1 week ago</div>
+        </div>
+    </div>
+    
+    <div class="notification">
+        <img src="assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson">
+        <div class="notification-content">
+            <p><strong>Nathan Peterson</strong> reacted to your recent post <span class="highlight">5 end-game strategies to increase your win rate</span></p>
+            <div class="time">2 weeks ago</div>
+        </div>
+    </div>
+    
+    <div class="notification">
+        <img src="assets/images/avatar-anna-kim.webp" alt="Anna Kim">
+        <div class="notification-content">
+            <p><strong>Anna Kim</strong> left the group <span class="highlight">Chess Club</span></p>
+            <div class="time">2 weeks ago</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
