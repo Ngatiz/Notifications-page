@@ -18,21 +18,23 @@ body{
   margin-left: 10px;
 }
 
-button{
+button {
   margin: auto;
 }
 
-.notification{
+.notification {
   display: flex;
   padding: 10px 0;
 }
 
-.notification-content{
+.notification-content {
   margin-left: 10px;
 }
 
-.notification-content .time{
+.time {
+  font-size: 12px;
   margin-top: 5px;
+  color: grey;
 }
 
 img{
