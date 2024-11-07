@@ -6,6 +6,15 @@ body{
   align-items: center;
 }
 
+@media screen and (max-width: 720px) {
+  .message-box {
+    font-size: 11px;
+  }
+  .time{
+    font-size: 10px;
+  }
+}
+
 .notification-container{
   width: 680px;
   border-radius: 8px;
@@ -25,6 +34,12 @@ button {
 .notification {
   display: flex;
   padding: 10px 0;
+}
+
+#unread {
+  background-color: rgb(234, 245, 252);
+  border-radius: 10px;
+  margin: 3px;
 }
 
 .notification-content {
@@ -50,8 +65,9 @@ img {
   border: 1px solid grey;
   border-radius: 5px;
   padding: 10px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 680px;
   font-size: 13px;
   color: #555;
 }
